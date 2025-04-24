@@ -18,7 +18,7 @@ def my_args(parser):
     parser.add_argument("--output_dir", type=str, default='../outputs/', help="Path to output folder, checkpoints will be saved here")
 
     # -------------dataset settings----------------
-    parser.add_argument("--dataset_root_dir", type=str, default='/home/jye/dataset/ERC', help="Root directory of ERC dataset")
+    parser.add_argument("--dataset_root_dir", type=str, default='/ERC', help="Root directory of ERC dataset")
     parser.add_argument("--dataset_name", type=str, default='IEMOCAP', choices=['IEMOCAP', 'MELD', 'CMU_MOSEI', 'CMU_MOSI', 'CH_SIMS', 'CH_SIMS_v2'], help="Name of the dataset")
     parser.add_argument("--class_type", type=str, default='emotion', 
                         choices=['emotion', 'sentiment', '4_ways'], help="4_ways is only enable for iemocap dataset")
